@@ -1,0 +1,13 @@
+$(selector) . action(function()
+{
+
+})
+
+$('button').click(function()
+{
+	//HANDLER CODE
+});
+
+source -> button
+listener -> click, change , focus, blur
+handler -> add(), sub()

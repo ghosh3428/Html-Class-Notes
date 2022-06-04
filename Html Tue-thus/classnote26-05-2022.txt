@@ -1,0 +1,27 @@
+javascript
+
+
+source  -> element raise the event (button)
+listener -> catch the type of event (onclick)
+handler  -> perform the action (function)
+
+click event
+onclick
+
+load
+onload
+
+mouse
+onmouseenter
+onmuuseleave
+
+onfocus
+onblur
+
+onchange
+
+
+
+value -> to access the value of an input box
+innerHTML -> access the content inside an element
+style -> to change the stylling of an element 
