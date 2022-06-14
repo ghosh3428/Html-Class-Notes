@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Canvas Example</title>
+    </head>
+    <body>
+        <canvas id="mycanvas" height="800" width="800" style="background-color:dimgrey">
+        </canvas>
+
+        <script>
+                canvas = document.getElementById("mycanvas");
+                ctx = canvas.getContext("2d");
+
+                ctx.beginPath();
+                ctx.arc(100,100,50 ,2*Math.PI,0);
+                ctx.fillStyle="#00FF00";
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.arc(250,100,50 ,2*Math.PI,0);
+                ctx.fillStyle="#00FF00";
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.lineWidth = 10;
+                ctx.moveTo(320, 320);
+                ctx.bezierCurveTo(320, 400, 400, 200, 300, 320);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.lineWidth = 10;
+                ctx.moveTo(230, 230);
+                ctx.bezierCurveTo(120, 200, 300, 200, 300, 320);
+                ctx.stroke();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+Graphics :
+
+
+paper ->  Canvas(tag)
+pencil ->  Context(object)
+
+
+rect(x, y , width , height) -> draw a rectangle with no-outline and no-fill
+fillRect(x,y,w,h) -> draw a rectangle and fill it with a color
+strokeRect(x,y,w,h) -> draw a rectangle and give an outline
+clearRect(x,y,w,h) -> clear a part of the canvas
+
+stroke() -> gives an outline
+fill() -> fill a shape with a color
+
+strokeStyle  = color -> change the stroke color
+fillStyle  = color -> change the fill color
+
+
+path
+
+beginPath() -> start a path
+moveTo(x,y) -> to move the pointer to the specified points
+lineTo(x,y) -> draw a line
+closePath() -> draw a line from current to start
+
+
+arc(x,y, r , st angle ,en angle)  angle->2pi
+arcTo(x1,y1 , x2,y2, radius)
+
+bezierCurveTo(x1,y1,x2,y2,x3,y3)

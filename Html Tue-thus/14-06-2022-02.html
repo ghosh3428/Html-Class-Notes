@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Canvas Example</title>
+    </head>
+    <body>
+        <canvas id="mycanvas" height="500" width="500" style="background-color:brown">
+        </canvas>
+
+        <script>
+                canvas = document.getElementById("mycanvas");
+                ctx = canvas.getContext("2d");
+
+                ctx.beginPath();
+
+                //ctx.moveTo(300,100);
+                //ctx.lineTo(450,350);
+                //ctx.lineTo(200,350);
+                //ctx.closePath();
+
+                ctx.moveTo(250,50);
+                ctx.lineTo(300,150);
+                ctx.lineTo(400,150);
+                ctx.lineTo(350,250);
+                ctx.lineTo(400,300);
+                ctx.lineTo(300,300);
+                ctx.lineTo(250,350);
+                ctx.lineTo(200,300);
+                ctx.lineTo(100,300);
+                ctx.lineTo(150,250);
+                ctx.lineTo(100,150);
+                ctx.lineTo(200,150);
+                ctx.closePath();
+
+                ctx.fillStyle="#00FF00";
+                ctx.fill();
+
+                ctx.stroke();
+        </script>
+    </body>
+</html>
