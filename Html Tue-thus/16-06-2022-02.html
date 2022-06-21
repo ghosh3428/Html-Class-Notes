@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Canvas Example</title>
+    <style>
+        #div1{
+            background-image : linear-gradient(red,green,yellow);
+            height:100px;
+            width:100px;
+            
+        }
+        #div2{
+            background-image : linear-gradient(to right, red,green,yellow);
+            height:100px;
+            width:100px;
+            
+        }
+        #div3{
+            background-image : linear-gradient(to bottom right ,red,green,yellow);
+            height:100px;
+            width:100px;
+           
+        }
+        li{
+            display:inline;
+        }
+    </style>
+</head>
+
+<body>
+        <canvas id="mycanvas" height="300" width="300" >
+        </canvas>
+
+        <div id="div1">
+        </div>
+        <div id="div2">
+        </div>
+        <div id="div3">
+        </div>
+        <ol>
+            <li>india</li>
+            <li>pakistan</li>
+        </ol>
+    <script>
+
+        canvas = document.getElementById("mycanvas");
+        ctx = canvas.getContext("2d");
+
+       /*
+        //Diagonal Representation
+        grad = ctx.createLinearGradient(10,10,200,200);
+
+        //vertical representation
+        grad = ctx.createLinearGradient(10,10,200,0);
+        */
+
+        //horizontal representation
+        grad = ctx.createLinearGradient(10,10,0,200);
+        grad.addColorStop(0,"red");
+        grad.addColorStop('.25',"yellow");
+        grad.addColorStop('.5',"blue");
+        grad.addColorStop('.75',"green");
+
+        ctx.fillStyle = grad;
+
+        ctx.fillRect(10,10, 200,200);
+        
+
+    </script>
+</body>
+
+</html>

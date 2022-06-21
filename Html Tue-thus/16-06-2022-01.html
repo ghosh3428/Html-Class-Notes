@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Canvas Example</title>
+</head>
+
+<body>
+    <center>
+        <canvas id="mycanvas" height="400" width="400" style="background-color:dimgrey ; border:5px solid red">
+        </canvas>
+    </center>
+    <script>
+
+        canvas = document.getElementById("mycanvas");
+        ctx = canvas.getContext("2d");
+
+        evenY = 50;
+        oddY = 0;
+
+        for (i = 1; i <= 8; i++) {
+            if (i % 2 == 0) {
+                ctx.fillStyle = "white";
+                ctx.fillRect(0, evenY, 50, 50);
+                ctx.fillRect(100, evenY, 50, 50);
+                ctx.fillRect(200, evenY, 50, 50);
+                ctx.fillRect(300, evenY, 50, 50);
+
+                ctx.fillStyle = "black";
+                ctx.fillRect(50, evenY, 50, 50);
+                ctx.fillRect(150, evenY, 50, 50);
+                ctx.fillRect(250, evenY, 50, 50);
+                ctx.fillRect(350, evenY, 50, 50);
+
+                evenY += 100;
+            }
+            else {
+                ctx.fillStyle = "black";
+                ctx.fillRect(0, oddY, 50, 50);
+                ctx.fillRect(100, oddY, 50, 50);
+                ctx.fillRect(200, oddY, 50, 50);
+                ctx.fillRect(300, oddY, 50, 50);
+
+                ctx.fillStyle = "white";
+                ctx.fillRect(50, oddY, 50, 50);
+                ctx.fillRect(150, oddY, 50, 50);
+                ctx.fillRect(250, oddY, 50, 50);
+                ctx.fillRect(350, oddY, 50, 50);
+
+                oddY += 100;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
