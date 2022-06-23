@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script src="jquery.js"></script>
+    <script src="galleria.js"></script>
+</head>
+
+<body>
+
+    <div class="galleria">
+        <img  src="howrah.jpg"/>
+        <img  src="img1.jpg"/>
+        <img  src="img2.jpg"/>
+        <img src="img3.jpg"/>
+        <img  src="victoria.jpg"/>
+        <img  src="daisy.jpg"/>
+        <img  src="marylou.jpg"/>
+        <img  src="ohoopee1.jpg"/>
+        <img src="ohoopee2.jpg"/>
+        <img  src="ohoopee3.jpg"/>
+    </div>
+
+    <script>
+        $(function () {
+            // Load the Fullscreen theme
+            Galleria.loadTheme('galleria.twelve.js');
+
+            // Initialize Galleria
+            Galleria.run('.galleria', {
+  height: 550 ,
+  wait: true
+ });
+        });
+    </script>
+
+</body>
+
+</html>
